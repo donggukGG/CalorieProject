@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/userEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userEmailTextView"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Height"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editHeight"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Weight"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/saveDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWeight"
+        android:layout_marginTop="16dp"
+        android:text="데이터 저장" />
+
+    <TextView
+        android:id="@+id/historyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveDataButton"
+        android:layout_marginTop="16dp"
+        android:text="신체정보 기록"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/historyTextView"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/historyListView"
+        android:layout_marginTop="16dp"
+        android:text="로그아웃" />
+
+</RelativeLayout>

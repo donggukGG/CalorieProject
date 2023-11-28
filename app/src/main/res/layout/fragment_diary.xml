@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/foodEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아침메뉴"/>
+
+    <EditText
+        android:id="@+id/foodEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodEditText1"
+        android:layout_marginTop="8dp"
+        android:hint="점심메뉴"/>
+
+    <EditText
+        android:id="@+id/foodEditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodEditText2"
+        android:layout_marginTop="8dp"
+        android:hint="저녁메뉴"/>
+
+    <EditText
+        android:id="@+id/foodEditText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodEditText3"
+        android:layout_marginTop="8dp"
+        android:hint="디저트"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodEditText4"
+        android:layout_marginTop="16dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/recommendedCaloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveButton"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/remainingCaloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommendedCaloriesTextView"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/consumedCaloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remainingCaloriesTextView"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>
+
+
